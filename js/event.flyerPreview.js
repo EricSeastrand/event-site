@@ -54,6 +54,15 @@ function _event_WebFlyer_Create( eventId ) {
 		var prettyStartTime = new Date(Date.parse( item['Event_TimeSlot.Time_Start'] ))
 					.strftime(strftimeString).replace(formattingRegex, '');
 		
+		var soundcloudLink = $('<a>').addClass('event-lineup-performer-soundcloud')
+			.append('<img src="img/soundcloud-icon.png">');
+		
+		if( item['Performer.URL_Soundcloud'] ) {
+			soundcloudLink.attr({'href': 'http://soundcloud.com/'+ item['Performer.URL_Soundcloud'], 'target': '_BLANK'});
+		} else {
+			soundcloudLink.css('opacity', '.25').attr('title', 'Sorry! This performer does not have a SoundCloud account on file.');
+		}
+		
 		$(this).append(
 		$('<div class="event-lineup-performer">').append(
 			$('<div class="event-lineup-performer-name">')
@@ -63,9 +72,7 @@ function _event_WebFlyer_Create( eventId ) {
 			$('<a>')
 				.attr({'href': 'http://facebook.com/'+ item['Performer.URL_Facebook'], target: '_BLANK'})
 				.append('<img src="img/Facebook-icon.png">'),
-			$('<a>').addClass('event-lineup-performer-soundcloud')
-				.attr({'href': 'http://Soundcloud.com/'+ item['Performer.URL_Soundcloud'], target: '_BLANK'})
-				.append('<img src="img/soundcloud-icon.png">')
+			soundcloudLink
 		) );
 	}
 	
