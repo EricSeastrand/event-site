@@ -169,7 +169,10 @@ body {
 	border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-
+.sc-waveform-container img {
+	width: inherit;
+	height: inherit;
+}
 .event-home {
 	color: #F1F1F1;
 	padding: 36px;

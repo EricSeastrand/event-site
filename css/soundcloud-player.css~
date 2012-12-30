@@ -1,0 +1,54 @@
+
+.sc-trackslist, .sc-artwork-list, .sc-info-close, .sc-info-toggle, .sc-pause.hidden, .sc-play.hidden {
+	display: none;
+}
+.sc-waveform-container img {
+	width: inherit;
+	height: inherit;
+}
+
+.sc-player {
+	position: absolute;
+	border-bottom: 1px solid orange;
+	width: 100%;
+	z-index: 10;
+}
+.sc-scrubber {
+	position: absolute;
+
+height: 100%;
+top: 0;
+}
+
+.sc-waveform-container {
+	height: 100%;
+	width: 100%;
+	background: gray;
+	opacity: .4;
+}
+.sc-player:hover .sc-waveform-container {
+	opacity: 1;
+}
+.sc-time-span {
+	
+}
+.sc-info {
+	padding: 6px 32px;
+}
+
+.sc-buffer, .sc-played {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+}
+.sc-buffer {
+	background: rgba(209, 241, 209, 0.37);
+}
+.sc-played {
+	background: rgba(87, 41, 41, 0.46);
+}
+.sc-time-span {
+width: 100%;
+}
+

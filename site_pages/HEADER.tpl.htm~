@@ -2,9 +2,14 @@
 <html>
 	<head>
 		<title>[% Event.Name %]</title>
+		<link href='http://fonts.googleapis.com/css?family=Numans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Racing+Sans+One' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lilita+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=New+Rocker|Jolly+Lodger' rel='stylesheet' type='text/css'>
 
-		<link href='http://fonts.googleapis.com/css?family=Lilita+One|Numans|Monoton|Racing+Sans+One|Open+Sans|Jolly+Lodger' rel='stylesheet' type='text/css'>
 		<link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/smoothness/jquery-ui.css" rel="stylesheet" />
 	<!--	<link rel="stylesheet" href="scPlayer/css/sc-player-minimal/structure.css" type="text/css"> -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -19,7 +24,6 @@
 		<script type="text/javascript" src="js/event.flyerPreview.js"></script>
 
 		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="css/soundcloud-player.css" />
 
 	</head>
 	<body>
