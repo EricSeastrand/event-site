@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>[% Event.Name %]</title>
+		<link href='http://fonts.googleapis.com/css?family=Numans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Racing+Sans+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lilita+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=New+Rocker|Jolly+Lodger' rel='stylesheet' type='text/css'>
+		
+		<link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+		<link rel="stylesheet" href="scPlayer/css/sc-player-minimal/structure.css" type="text/css">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+
+		<script type="text/javascript" src="scPlayer/js/soundcloud.player.api.js"></script>
+		<script type="text/javascript" src="scPlayer/js/sc-player.js"></script>
+		
+		<script type="text/javascript" src="js/esJS.CORE.js"></script>
+		<script type="text/javascript" src="js/esJS.dragDropList.js"></script>
+		
+		<script type="text/javascript" src="js/event.flyerPreview.js"></script>
+ 		
+		<link rel="stylesheet" href="style.css" />
+		
+	</head>
+	<body>
+		<a class="sc-player" href="http://soundcloud.com/vitamine">Test Soundcloud</a>
+		<div class="event-page-head">
+<!-- <a href="http://soundcloud.com/vitamine/killer-vs-eyes-wide-open" class="sc-player">test</a> -->
+			<div class="event-page-head-content">
+				<h1>[% Event.Name %]</h1>
+				<h3 class="event-date">[% Event.Start.Date %]</h3>
+				<div class="event-time-info">
+					<h4 class="event-doors-open">Doors Open at [% Event.Start.Time %]</h4>
+					<h4 class="event-time-close">[% Event.End.Time %] Close</h4>
+				</div>
+			</div>
+			
+			<div class="event-page-navbar">
+			<!--	<ol>
+					<li>
+						<a href="?">Home</a>
+					</li>
+					<li>
+						<a href="?page=location">Venue</a>
+					</li>
+					<li>
+						<a href="?page=lineup">Lineup</a>
+					</li>
+					<li>
+						<a href="?page=gallery">Gallery</a>
+					</li>
+
+				</ol>
+			-->
+					<a href="?" class="current-page"><span>Home</span></a>
+					<a href="?page=venue"><span>Venue</span></a>
+					<a href="?page=lineup"><span>Lineup</span></a>
+					<a href="?page=gallery"><span>Gallery</span></a>
+
+				
+			</div>
+		</div>
+		
+		<div class="event-page-body">
+
+<!-- END HEADER.tpl -->
